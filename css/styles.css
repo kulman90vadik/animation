@@ -1,0 +1,145 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#50cc7f), to(#f5d100));
+  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+}
+.hero .container {
+  height: 100%;
+}
+.hero__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__left {
+  width: 60%;
+}
+.hero__text {
+  padding: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+.hero__text::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 11px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.hero__right {
+  font-size: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  padding: 25px;
+}
+.hero__right div {
+  display: inline-block;
+}/*# sourceMappingURL=styles.css.map */

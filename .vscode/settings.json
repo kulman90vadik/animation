@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css"
+      }
+    ],
+    "liveSassCompile.settings.generateMap": true, // если нужен source map
+    "liveSassCompile.settings.autoprefix": ["last 2 versions"]
+  }
+  
