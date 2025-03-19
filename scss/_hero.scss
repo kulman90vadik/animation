@@ -1,72 +1,59 @@
-
 .hero {
+  // height: 100vh;
 
-    height: 100vh;
-    // background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background-color: #fced57;
+  height: calc(100vh - 100px);
+  .container {
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+  }
+
+  &__text {
+    // width: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 605px;
+    width: 100%;
+  }
+
+  &__content {
+    border: 1px solid black;
+    height: 100%;
     overflow: hidden;
-    // background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
-    background-color: #ecbb09;
+    position: relative;
+    max-width: 605px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &__inner {
-        height: 100vh;
-        display: flex;
+    // width: 50vw;
+    svg {
+        // transform: scale(1.2, 1.1);
+        // inset: 0;
+        position: absolute;
+        transform: scale(1);
+        transform-origin: center;  
+        // height: calc(150vh);
+        // width: 605px;
+        height: auto;
+     
     }
+  }
 
-    &__left {
-        width: 60%;
-        // display: flex;
-        height: 100%;
-        background-color: rgb(36, 231, 11);
-        
-        img {
-            object-fit: cover;
-            // width: 100%;
-            // height: auto;
-            // object-fit: cover;
-        }
-    }
-
-    &__text {
-        padding: 20px;
-        font-size: 25px;
-        text-transform: uppercase;
-        text-align: center;
-        z-index: 1;
-        position: relative;
-
-        // max-width: 100px;
-        // width: 100%;
-
-        // display: flex;
-        &::after {
-            position: absolute;
-            content: '';
-            inset: 0;
-            z-index: -1;
-            background-color: rgba(#fff, 0.3);
-            border-radius: 11px;
-            backdrop-filter: blur(10px); 
-           -webkit-backdrop-filter: blur(10px); 
-        }
-    }
-
-    &__right {
-        font-size: 21px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        padding: 25px;
-
-        div {
-            display: inline-block;
-        }
-
-        // background-color: rgba(#0dec2b, 0.2);
-        
-        // backdrop-filter: blur(10px); /* Размытие заднего фона */
-        // -webkit-backdrop-filter: blur(10px); /* Для Safari */
-    }
-
-    
+  &__bottom {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #1c803d;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 700;
+  }
 }
