@@ -99,6 +99,7 @@ body {
   width: 100%;
   left: 0;
   top: 0;
+  overflow-x: hidden;
 }
 .header .container {
   margin: auto auto;
@@ -126,6 +127,7 @@ body {
           flex-direction: column;
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 .header__btn span {
   display: block;
@@ -142,6 +144,9 @@ body {
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
+}
+.header__logo .letter {
+  display: inline-block;
 }
 
 .hero {
